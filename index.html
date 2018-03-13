@@ -1,0 +1,32 @@
+<html>
+    <header>
+
+    </header>
+    <body>
+        asd
+    </body>
+    <script>
+        var count = 1;
+
+        function print(err, data) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+            console.log(data + 1);
+        }
+
+        function exec(count, callback) {
+            if (count == 1) {
+                console.log(count);
+                return;
+            }
+            callback(count + 1, count);
+        }
+
+        exec(count + 1, function (value1, value2) {
+            console.log("value1: " + value1 + "\n");
+            console.log("value2: " + value2);
+        });
+    </script>
+</html>
