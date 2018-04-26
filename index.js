@@ -109,4 +109,8 @@ app.get('/getUserMongo', function (req, res) {
     });
 });
 
+app.get('/getProducts', function(req, res) {
+
+});
+
 app.listen(3000);

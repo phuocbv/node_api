@@ -26,7 +26,7 @@ app.post('/sendMail', function (req, res) {
         if (error) {
             console.log(error);
             throw error;
-        } 
+        }
         console.log('Email sent: ' + info.response);
         res.send(info);
     });
